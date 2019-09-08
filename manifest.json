@@ -1,0 +1,8 @@
+{
+  "short_name": "ChooseMe",
+  "name": "ChooseMe",
+  "icons": [
+  ],
+  "start_url": "./index.html",
+  "display": "standalone"
+}
