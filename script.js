@@ -29,12 +29,12 @@ function draw() {
   for (t of touchCache) {
     ctx.fillStyle=t.identifier == winner ? "#e3291b": "#1b50e3";
     ctx.beginPath();
-    ctx.arc(t.clientX*2, t.clientY*2, 35*2, 0, Math.PI * 2);
+    ctx.arc(t.clientX*2, t.clientY*2, 65*2, 0, Math.PI * 2);
     ctx.fill();
     ctx.strokeStyle = t.identifier == winner ? "#e3dc1b": "white";
     ctx.lineWidth = 2*2;
     ctx.beginPath();
-    ctx.arc(t.clientX*2, t.clientY*2, 45*2, Math.PI * -0.5, Math.PI * -0.5 + Math.PI * ((new Date()) - waitStart) / 1000);
+    ctx.arc(t.clientX*2, t.clientY*2, 75*2, Math.PI * -0.5, Math.PI * -0.5 + Math.PI * ((new Date()) - waitStart) / 1000);
     ctx.stroke();
   }
 }
